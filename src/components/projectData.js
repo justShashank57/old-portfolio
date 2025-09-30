@@ -1,4 +1,4 @@
-export default[
+const projectData = [
     
     {
         name:"MedMeet",
@@ -65,4 +65,6 @@ export default[
         class:"right",
         link:"https://tic-tac-toe-shashank.netlify.app/"
     }
-]
+];
+
+export default projectData;

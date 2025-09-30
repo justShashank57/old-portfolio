@@ -13,9 +13,9 @@ export default function Contact(){
             <div id="second">
             <motion.h1 whileHover={{letterSpacing:"8px"}} id="findMe">Find me on:</motion.h1>
             <div id="mediaHandles">
-                <a href="https://github.com/justShashank57" target="_blank"><motion.img whileHover={{opacity:1}} id="github" src="square-github.svg"></motion.img></a>
-                <a href="https://www.linkedin.com/in/shashank-bidhuri-47a892249/" target="_blank"><motion.img whileHover={{opacity:1}} id="linked" src="linkedin.svg"></motion.img></a>
-                <a href="https://www.instagram.com/just_shashank__/" target="_blank"><motion.img whileHover={{opacity:1}} id="instagram" src="square-instagram.svg"></motion.img></a>
+                <a href="https://github.com/justShashank57" target="_blank" rel="noreferrer"><motion.img whileHover={{opacity:1}} id="github" src="square-github.svg" alt="GitHub"></motion.img></a>
+                <a href="https://www.linkedin.com/in/shashank-bidhuri-47a892249/" target="_blank" rel="noreferrer"><motion.img whileHover={{opacity:1}} id="linked" src="linkedin.svg" alt="LinkedIn"></motion.img></a>
+                <a href="https://www.instagram.com/just_shashank__/" target="_blank" rel="noreferrer"><motion.img whileHover={{opacity:1}} id="instagram" src="square-instagram.svg" alt="Instagram"></motion.img></a>
             </div>
             <h1 id="hola">or</h1>
             <Email/>

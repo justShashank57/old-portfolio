@@ -1,23 +1,23 @@
 import React from "react";
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 
 export default function Card(props){
       const[showDetails,setShowDetails] = React.useState(false);
       const[flip,setFlip] = React.useState(false);
       const cardRef = React.useRef(null);
-      let tiltInstance = null;
+      const tiltInstanceRef = React.useRef(null);
       
       React.useEffect(()=>{
             
             if (!showDetails) {
-                  tiltInstance = VanillaTilt.init(cardRef.current, {
+                  tiltInstanceRef.current = VanillaTilt.init(cardRef.current, {
                     max: 25,
                     speed: 400,
                   });
                 } else {
                   console.log("destroying")
-                  tiltInstance && cardRef.current.VanillaTilt.destroy();
+                  tiltInstanceRef.current && cardRef.current.VanillaTilt.destroy();
                 }
       },[showDetails])
       
@@ -109,7 +109,7 @@ export default function Card(props){
                         <h1 id="backText">{props.obj.name}</h1>
                         <h3 id="backTech">Tech Stack: {props.obj.tech}</h3>
                         <p id="backDesc">{props.obj.desc}</p>
-                        <a href={props.obj.link} target="_blank">
+                        <a href={props.obj.link} target="_blank" rel="noreferrer">
                         <motion.div id="visit" whileHover={{scale:1.1}}>Visit</motion.div>
                         </a>
                         </motion.div>

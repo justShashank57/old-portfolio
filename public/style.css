@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Caveat&family=Prompt&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bebas+Neue&display=swap');
+/* background-image: linear-gradient(to right,#DA01EF,#9B10FE); */
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+/* nav{
+    margin: 0;
+    position: fixed;
+    top: 350rem;
+    left: -125rem;
+} */
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.422);
+    /* background-color: #0005; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0rem 30rem 60rem -12rem, rgba(42, 42, 42, 0.3) 0rem 18rem 36rem -18rem; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0rem 0.5rem 1.5rem;
+    padding: 0.0625rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: right;
+    margin-right: 15%;
+}
+a{
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+.circle{
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right,#edaef9,#81b1fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1.875rem;
+}
+#myPhoto{
+    width: 15.625rem;
+    height: auto;
+    position: relative;
+    top: 2.5rem;
+    right: 0.3125rem;
+    pointer-events: none;
+}
+#main{
+    height: 100vh;
+}
+#home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.875rem;
+}
+#homeContent{
+    margin-right: 1.25rem;
+    padding: 2.5rem;
+    display: flex;
+    gap: 6.25rem;
+    position: relative;
+    right: 3.125rem;
+}
+#bigCircle{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 6.25rem;
+}
+#name{
+    display: flex;
+}
+.letter{
+    margin: 0.625rem;
+    padding: 0.625rem;
+    background-color: #81b1fa;
+    border-radius: 0.3125rem;
+    color: white;
+    height: 1.563rem;
+    width: 1.563rem;
+    text-align: center;
+    line-height: 1.563rem;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    cursor: default;
+}
+#hola,#quote{
+    font-family: 'Caveat', cursive;
+    font-weight: lighter;
+    font-size: 1.875rem;
+    padding-left: 0.625rem;
+    color: #333333;
+}
+#quote{
+    color: white;
+    font-weight: bolder;
+}
+#stack{
+    padding: 2.5rem;
+    letter-spacing:0.3125rem;
+    position: relative;
+    right: 17%;
+    display: flex;
+    gap: 2.5rem;
+    padding-top: 0;
+}
+#fullStackDeveloper{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.875rem;
+    color: #333333;
+    font-weight: lighter;
+    opacity: 0.7;
+    z-index: -999;
+}
+#stackBox{
+    display: flex;
+    gap: 1rem;
+    padding: 0.625rem;
+    background-color: #eeeeee;
+    border-radius: 0.625rem;
+}
+#summary{
+    color: #333333;
+    font-family: 'Caveat', cursive;
+    font-weight: lighter;
+    opacity: 0.75;
+    padding: 0.625rem;
+}
+#techStack{
+    gap: 0.625rem;
+    display: flex;
+    justify-content: left;
+    padding: 0.625rem;
+    height: 5rem;
+    width: 37.5rem;
+    border-radius: 0.625rem;
+}
+
+#tool{
+    height: 3.75rem;
+    width: auto;
+    background-color: white;
+    border-radius: 0.625rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 0.4375rem 1.8125rem 0;
+}
+#techText{
+    font-family: 'Caveat', cursive;
+    color: #333333;
+    font-weight: lighter;
+    letter-spacing: normal;
+}
+#linked,#github,#instagram{
+    margin: 0.625rem;
+    height: 1.875rem;
+    opacity: 0.7;
+    width:auto;
+    cursor: pointer;
+}
+#socials{
+    display: flex;
+    gap: 0.625rem;
+    padding: 0.625rem;
+}
+#skillRoot{
+    /* background-image: linear-gradient(to right,#DA01EF,#9B10FE);*/
+    /* background-image: linear-gradient(to right,#edaef9,#81b1fa);*/
+    /* background-color: #eeeeee; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    height: 100rem;
+    padding: 1.25rem;
+}
+#skillBox{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25%;
+    gap: 1.875rem;
+    position: relative;
+    /* left: 7%; */
+}
+#skillCard{
+    background-image: linear-gradient(to right,#ea96fb,#6ba5fe);
+    /* background-image: linear-gradient(to right,#91abef,#a9ebd7); */
+    /* border: 1.5rem solid black; */
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    text-align: center;
+    width: 25rem;
+    position: relative;
+    cursor: pointer;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0rem 10rem 31rem 0rem; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0rem 5rem 15rem; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0 3rem 6.25rem -1.25rem, rgba(0, 0, 0, 0.3) 0rem 1.875rem 3.75rem -3.75rem;
+}
+.circleProgress{
+    fill: none;
+    /* stroke: #12c2e9; */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.circleBackground{
+    fill: none;
+    stroke: #ddd;
+}
+.skill{
+    display: flex;
+    gap: 1.25rem;
+    /* justify-content: center; */
+}
+#projectImg{
+    width: 15.625rem;
+    height: auto;
+}
+#cardBox{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #bebebe; */
+    background-image: linear-gradient(to right,#a0b5eb,#c9f0e4);
+    /* background-image: linear-gradient(to right,#ea96fb,#6ba5fe); */
+    width: 62.5rem;
+    border-radius: 0.625rem;
+    padding: 3.125rem;
+    padding-bottom: 6.25rem;
+    margin: 1.25rem;
+    gap: 3.125rem;
+    justify-content: center;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0rem 30rem 60rem -12rem inset, rgba(0, 0, 0, 0.3) 0rem 18rem 36rem -18rem inset; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0 3.75rem 6.875rem -1.25rem, rgba(0, 0, 0, 0.3) 0 2.5rem 4.375rem -1.875rem;
+}
+.cardBorder,#backpart{
+    /* background-image: linear-gradient(to right,#bdc3c7,#2c3e50);
+    background-image: linear-gradient(to right,#2980b9,#6dd5fa); */
+    background-image: linear-gradient(to right,#ea96fb,#6ba5fe);
+    background-size: contain;
+    /* background-image: linear-gradient(to right,#a0b5eb,#c9f0e4); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0rem 3rem 6.25rem -1.875rem, rgba(0, 0, 0, 0.3) 0 1.875rem 3.75rem -1.875rem;
+    width: 25rem;
+    height: 12.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+#contactMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contactButton{
+    margin: 0.625rem;
+    text-align: center;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    width: 8.75rem;
+    background-image: linear-gradient(to right,#DA01EF,#9B10FE);
+    color: white;
+    border-radius: 2.1875rem;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+#projectText{
+    margin-top: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.875rem;
+    color: #333333;
+    font-weight: lighter;
+    cursor:default;
+}
+#skillText{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.875rem;
+    color: #333333;
+    font-weight: lighter;
+    cursor:default;
+}
+#progressBar{
+    box-shadow: rgba(50, 50, 93, 0.25) 0 1.875rem 3.75rem -0.75rem, rgba(0, 0, 0, 0.3) 0 1rem 2.25rem -1rem;
+}
+.lang{
+    font-family: 'Quicksand', sans-serif;
+    /* font-size: 30rem; */
+    color: #333333;
+    font-weight: lighter;
+}
+#findMe{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.875rem;
+    color: #333333;
+    font-weight: lighter;
+    cursor:default;
+}
+#projectRoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    padding-bottom: 5rem;
+    /* background-color: #eeeeee; */
+}
+
+#contactMe{
+    background-color: #eeeeee;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+#frontPart,#backpart{
+    text-align: center;
+    color: white;
+}
+#frontText{
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    position: relative;
+    color: white;
+    top: 12.5rem;
+    z-index: 100;
+}
+.right{
+    position: relative;
+    left: 55%;
+}
+.left{
+    position: relative;
+    left: 5%;
+}
+#skills{
+    box-shadow: rgba(50, 50, 93, 0.25) 0 3.75rem 6.875rem -1.25rem, rgba(0, 0, 0, 0.3) 0 2.5rem 4.375rem -1.875rem;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    background-image: linear-gradient(to right,#a0b5eb,#c9f0e4);
+    position: absolute;
+    width: 56.25rem;
+    /* width:fit-content; */
+}
+#backText{
+    font-family: 'Quicksand', sans-serif;
+}
+#backTech{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+}
+#backDesc{
+    font-family: 'Caveat', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
+}
+#visit{
+    padding:0.3125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin: 0.1875rem;
+    background-image: linear-gradient(to right,#DA01EF,#9B10FE);
+    color: white;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    font-size: 0.6875rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+#emailRoot{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    margin: 1rem;
+    gap: 1.25rem;
+    /* border:1rem solid #333333; */
+    border-radius: 0.625rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 3.125rem 6.53rem -1.25rem, rgba(0, 0, 0, 0.3) 0 2.19rem 4rem -1.875rem;
+    width: 15.625rem;
+    height: 17.075rem;
+    background-color: white;
+
+}
+#message{
+    font-family: 'Caveat', cursive;
+    height: 6.25rem;
+    width: 100%;
+    resize:none;
+}
+#name{
+    width: 100%;
+    font-family: 'Caveat', cursive;
+}
+#email{
+    width: 100%;
+    font-family: 'Caveat', cursive;
+}
+#sending{
+    text-align: center;
+    display: flex;
+    gap: 1.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#first{
+    padding: 1.25rem;
+}
+#second{
+    padding: 1.25rem;
+    text-align: center;
+    margin-right: 1.875rem;
+}
+#quoteTwo{
+    color: #333333;
+    font-family: 'Caveat', cursive;
+    font-size: 1.3125rem;
+    font-weight: lighter;
+}
+#collab{
+    font-family: 'Caveat', cursive;
+    color: #333333;
+}
+a{
+    padding-bottom: 0.1875rem;
+}
+@media screen and (max-width:786px) and (min-width:361px){
+     html{
+        font-size: 8px;
+     }
+     #cardBox{
+        width: 60rem;
+        padding: 2rem;
+        overflow: hidden;
+     }
+     #skillRoot{
+        padding-left: 0;
+        padding-right: 0;
+     }
+     #homeContent{
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        right: 0;
+     }
+     #introBox{
+        text-align: center;
+        width: 100%;
+     }
+     #socials{
+        justify-content: center;
+     }
+     #bigCircle{
+        left: 0;
+     }
+     #name{
+        justify-content: center;
+     }
+     #stack{
+        right: 0;
+     }
+     #main{
+        height: 80vh;
+     }
+     #cardBorder{
+        width: 19rem;
+        height: 10.5rem;
+     }
+}
+@media screen and (max-width:360px) {
+    html{
+        font-size: 7px;
+     }
+     #cardBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+        gap: 7rem;
+        padding: 2rem;
+        padding-bottom: 6rem;
+        overflow: hidden;
+     }
+     #skillRoot{
+        padding-left: 0;
+        padding-right: 0;
+     }
+     #homeContent{
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        right: 0;
+     }
+     #introBox{
+        text-align: center;
+        width: 100%;
+     }
+     #socials{
+        justify-content: center;
+     }
+     #bigCircle{
+        left: 0;
+     }
+     #name{
+        justify-content: center;
+     }
+     #stack{
+        right: 0;
+     }
+     #main{
+        height: 80vh;
+     }
+     #cardBorder{
+        width: 19rem;
+        height: 10.5rem;
+     }
+     .left{
+        left: 0;
+     }
+     .right{
+        left: 0;
+     }
+}

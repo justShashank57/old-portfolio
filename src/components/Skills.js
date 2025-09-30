@@ -44,9 +44,8 @@ export default function Skills(){
       }
     }
     return(
-        <div id="skillRoot"
-        > 
-                 
+        <div id="skillRoot">
+            <div className="skills-warning">Don't click on the board</div>
             {
                 showSkills ?
                 <motion.div
@@ -84,6 +83,14 @@ export default function Skills(){
                     <h4 className="lang">JavaScript</h4>
                 </div>
                 <div className="skill">
+                    <ProgressBar percentage={78} circleWidth={90}/>
+                    <h4 className="lang">TypeScript</h4>
+                </div>
+                <div className="skill">
+                    <ProgressBar percentage={75} circleWidth={90}/>
+                    <h4 className="lang">C#</h4>
+                </div>
+                <div className="skill">
                     <ProgressBar percentage={80} circleWidth={90}/>
                     <h4 className="lang">MongoDB</h4>
                 </div>
@@ -94,6 +101,10 @@ export default function Skills(){
                 <div className="skill">
                     <ProgressBar percentage={83} circleWidth={90}/>
                     <h4 className="lang">React</h4>
+                </div>
+                <div className="skill">
+                    <ProgressBar percentage={80} circleWidth={90}/>
+                    <h4 className="lang">React Native</h4>
                 </div>
                 <div className="skill">
                     <ProgressBar percentage={83} circleWidth={90}/>

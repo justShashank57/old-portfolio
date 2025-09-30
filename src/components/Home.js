@@ -40,7 +40,7 @@ export default function Home(){
             </div>
             <div id="stack">
              <div id="techStack">
-                           <h1 id="techText">Tech Stack :</h1>
+                           <h1 id="techText">Tools I Use :</h1>
                            <div id="stackBox">
                               <motion.img whileHover={{scale:1.1}} transition={{duration:0.2}} id="tool" src={mongo_logo}></motion.img>
                               <motion.img whileHover={{scale:1.1}} transition={{duration:0.2}} id="tool" src={express_logo}></motion.img>
